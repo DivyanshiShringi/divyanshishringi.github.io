@@ -1,7 +1,58 @@
 body {
-  font-family: "Aleo";
+  font-family: "Aleo", sans-serif;
+  background-color: #fff0f5;
   margin: 0;
-  background-color: #fff0f5; /* light pink background for full page */
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left, .right {
+  width: 20%;
+  padding-top: 100px;
+  background-color: #fafafa;
+  padding-left: 20px;
+}
+
+.center {
+  flex: 1;
+  padding: 50px;
+  background-color: #ffe4ec;
+  border-radius: 2rem;
+  margin: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.center > img {
+  float: right;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ffb6c1;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #222;
+  margin-top: 30px;
+}
+
+h3 {
+  background-color: #f7cdd5;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 a {
@@ -13,79 +64,10 @@ a:hover {
   text-decoration: underline;
 }
 
-div.container {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-}
-
-div.left {
-  padding-top: 200px;
-  min-width: 10%;
-  text-align: center;
-}
-
-div.center {
-  flex-grow: 1;
-  line-height: 1.5rem;
-  background-color: #ffe4ec; /* soft light pink */
-  padding: 50px;
-  border-radius: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-div.right {
-  padding-top: 200px;
-  text-align: center;
-}
-
-.center > img {
-  float: right;
-  width: 200px;
-  height: 200px;
-  border-radius: 10rem;
-  padding: 10px;
-  border: 2px solid #ffb6c1;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-h3 {
-  font-size: medium;
-  color: #171616;
-  background-color: #f7cdd5;
-  border-radius: 3rem;
-  padding: 5px 10px;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-}
-
-#star img {
-  width: 20px;
-  height: 20px;
-}
-
 #star p {
-  font-size: small;
   background-color: #ffe4ec;
   border-radius: 1em;
   padding: 15px;
-  margin: 10px;
+  margin: 10px 0;
   line-height: 1.4em;
-}
-
-#star p > div {
-  padding: 2px;
 }
